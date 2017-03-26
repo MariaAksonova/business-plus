@@ -1,24 +1,36 @@
 @import "variable";
 
+.single-post {
+  display: flex;
+  flex-direction: column;
 
-.post-content {
-  .apss-social-share {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    margin-top: 40px;
-
-    .apss-share-text {
-      margin-left: 0;
-      font-size: 14px;
-      font-family: $font-regular;
-      color: $grey-color;
-      text-transform: uppercase;
+  .main-footer {
+    .apss-social-share {
+      display: none;
     }
+  }
 
-    a {
-      min-height: 36px;
-      margin: 6px;
+  .post-content {
+    .apss-social-share {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      margin-top: 40px;
+
+      .apss-share-text {
+        margin-left: 0;
+        font-size: 14px;
+        font-family: $font-regular;
+        color: $grey-color;
+        text-transform: uppercase;
+      }
+
+      a {
+        min-height: 36px;
+        margin: 6px;
+      }
     }
   }
 }
+
+

@@ -141,26 +141,38 @@
       .site-main .pagination .nav-links .prev, .site-main .pagination .nav-links .next {
         display: none; }
 
-.post-content .apss-social-share {
+.single-post {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  margin-top: 40px; }
-  .post-content .apss-social-share .apss-share-text {
-    margin-left: 0;
-    font-size: 14px;
-    font-family: "OpenSansRegular", sans-serif;
-    color: #585858;
-    text-transform: uppercase; }
-  .post-content .apss-social-share a {
-    min-height: 36px;
-    margin: 6px; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .single-post .main-footer .apss-social-share {
+    display: none; }
+  .single-post .post-content .apss-social-share {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    margin-top: 40px; }
+    .single-post .post-content .apss-social-share .apss-share-text {
+      margin-left: 0;
+      font-size: 14px;
+      font-family: "OpenSansRegular", sans-serif;
+      color: #585858;
+      text-transform: uppercase; }
+    .single-post .post-content .apss-social-share a {
+      min-height: 36px;
+      margin: 6px; }
 
 .site-footer {
   background-color: #1c1c1c;
