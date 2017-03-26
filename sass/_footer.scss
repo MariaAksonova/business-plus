@@ -1,0 +1,102 @@
+@import "variable";
+
+.site-footer {
+  background-color: $dark-grey-color;
+  padding: 80px 0;
+  position: relative;
+
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &:before {
+    content: '';
+    background: url("./images/shape.png");
+    height: 101px;
+    width: 218px;
+    position: absolute;
+    top: -101px;
+    right: 20%;
+  }
+
+  .wpcf7 {
+    max-width: 400px;
+
+    h2 {
+      font-size: 18px;
+      font-family: $font-ralbold;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .wpcf7-submit {
+      color: $orange-color;
+      font-size: 13px;
+      font-family: $font-ralbold;
+      text-transform: uppercase;
+      border: 2px solid $orange-color;
+      background-color: transparent;
+      padding: 12px 24px;
+    }
+
+    .wpcf7-textarea {
+      min-width: 400px!important;
+      background-color: transparent;
+      border: 1px solid #2a2b2c;
+      padding: 10px;
+      font-size: 14px;
+      font-family: $font-regular;
+    }
+
+    .form-inputs {
+      display: flex;
+
+      label {
+        width: 50%;
+        margin-bottom: 0;
+
+        input {
+          width: 100%;
+          background-color: transparent;
+          border: 1px solid #2a2b2c;
+          padding: 10px;
+          font-size: 14px;
+          font-family: $font-regular;
+        }
+      }
+    }
+
+    p {
+      margin: 0
+    }
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 18px;
+      font-family: $font-ralbold;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        border-bottom: 1px solid $light-grey-color;
+
+        a {
+          font-size: 12px;
+          font-family: $font-regular;
+          color: $light-grey-color;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

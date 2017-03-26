@@ -1,0 +1,51 @@
+@import "variable";
+
+.main-header {
+  background: url("./images/header-bg.png") 50%;
+  background-size: cover;
+  height: 390px;
+  position: relative;
+
+  &:after, &:focus {
+    content: '';
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid rgba(255,255,255, 0.3);
+    position: absolute;
+    top: 82px;
+  }
+}
+
+.header-container {
+  display: flex;
+  padding: 22px 0;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.custom-logo {
+  width: 164px;
+  height: 34px;
+}
+
+.nav-pills {
+  .menu-item {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 15px;
+    font-family: $font-bold;
+
+    a {
+      color: #fff;
+
+      &:hover {
+        background-color: transparent;
+        color: $orange-color;
+      }
+    }
+  }
+}

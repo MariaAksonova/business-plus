@@ -1,0 +1,24 @@
+@import "variable";
+
+
+.post-content {
+  .apss-social-share {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-top: 40px;
+
+    .apss-share-text {
+      margin-left: 0;
+      font-size: 14px;
+      font-family: $font-regular;
+      color: $grey-color;
+      text-transform: uppercase;
+    }
+
+    a {
+      min-height: 36px;
+      margin: 6px;
+    }
+  }
+}

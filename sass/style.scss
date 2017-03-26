@@ -1,0 +1,28 @@
+@import "variable";
+@import "fonts";
+@import "header";
+@import "blog";
+@import "post";
+@import "footer";
+
+.about-btn-area {
+  border: 2px solid $orange-color;
+  height: 51px;
+  width: 151px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+
+  .button {
+    color: $orange-color;
+    font-size: 13px;
+    font-family: $font-ralbold;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $orange-color;
+    }
+  }
+}
+
