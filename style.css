@@ -217,7 +217,8 @@
       .site-main .content .comments .comment-form label {
         font-size: 14px;
         font-family: "OpenSansBold", sans-serif;
-        color: #585858; }
+        color: #585858;
+        text-transform: uppercase; }
       .site-main .content .comments .comment-form .comment-form-author {
         -webkit-box-ordinal-group: 2;
         -webkit-order: 1;
@@ -258,6 +259,12 @@
   background-color: #1c1c1c;
   padding: 80px 0;
   position: relative; }
+  .site-footer h1 p {
+    font-size: 13px;
+    font-family: "OpenSansBold", sans-serif;
+    color: #585858;
+    text-transform: uppercase;
+    margin-top: 20px; }
   .site-footer .main-footer {
     display: -webkit-box;
     display: -webkit-flex;

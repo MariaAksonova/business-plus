@@ -19,6 +19,7 @@
 				<div class="main-footer">
 					<h1>
 						<?php the_custom_logo(); ?>
+						<p>2015 © lawyer.</p>
 					</h1>
 					<div class="footer-nav">
 						<h2>Navigation</h2>

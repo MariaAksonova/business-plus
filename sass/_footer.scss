@@ -5,6 +5,16 @@
   padding: 80px 0;
   position: relative;
 
+  h1 {
+    p {
+      font-size: 13px;
+      font-family: $font-bold;
+      color: $grey-color;
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+  }
+
   .main-footer {
     display: flex;
     justify-content: space-between;
