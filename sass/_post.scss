@@ -33,4 +33,88 @@
   }
 }
 
+.site-main {
+  .content {
+    padding: 0;
+
+    .comments {
+      display: flex;
+      justify-content: center;
+      background-color: #eaeff3;
+      padding: 90px 0;
+
+      .comment-reply-title {
+        font-size: 30px;
+        font-family: $font-ralbold;
+        color: $dark-grey-color;
+        text-transform: uppercase;
+      }
+
+      .comment-text {
+        font-size: 16px;
+        font-family: $font-italic;
+        color: $dark-grey-color;
+        margin-bottom: 48px;
+      }
+
+      .comment-notes {
+        display: none;
+      }
+
+      .comment-form {
+        display: flex;
+        flex-direction: column;
+
+        #author, #email, #phone, textarea {
+          width: 100%;
+          background-color: transparent;
+          border: none;
+          border-bottom: 1px solid #dce3e8;
+        }
+
+        label {
+          font-size: 14px;
+          font-family: $font-bold;
+          color: $grey-color;
+        }
+
+        .comment-form-author {
+          order: 1;
+        }
+
+        .comment-form-email {
+          order: 2;
+        }
+
+        .comment-form-url {
+          display: none;
+        }
+
+        .comment-form-phone {
+          order: 3;
+        }
+
+        .comment-form-comment {
+          order: 4;
+        }
+
+        .form-submit {
+          order: 5;
+
+          .submit {
+            color: $orange-color;
+            font-size: 13px;
+            font-family: $font-ralbold;
+            text-transform: uppercase;
+            border: 2px solid $orange-color;
+            background-color: transparent;
+            padding: 12px 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 

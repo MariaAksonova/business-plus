@@ -42,7 +42,6 @@ get_header(); ?>
 										</a>
 									</div>
 									<?php the_content(); ?>
-									<?php comments_template(); ?>
 								</div>
 							</div>
 						</article>
@@ -52,6 +51,11 @@ get_header(); ?>
 						<?php endif; ?>
 					</div>
 				</div>
+                <div class="comments">
+                    <div class="col-xs-8">
+                        <?php comments_template(); ?>
+                    </div>
+                </div>
 			</section>
 		</main>
 	</div>

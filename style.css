@@ -174,6 +174,86 @@
       min-height: 36px;
       margin: 6px; }
 
+.site-main .content {
+  padding: 0; }
+  .site-main .content .comments {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #eaeff3;
+    padding: 90px 0; }
+    .site-main .content .comments .comment-reply-title {
+      font-size: 30px;
+      font-family: "RalewayBold", sans-serif;
+      color: #1c1c1c;
+      text-transform: uppercase; }
+    .site-main .content .comments .comment-text {
+      font-size: 16px;
+      font-family: "LoraItalic", sans-serif;
+      color: #1c1c1c;
+      margin-bottom: 48px; }
+    .site-main .content .comments .comment-notes {
+      display: none; }
+    .site-main .content .comments .comment-form {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .site-main .content .comments .comment-form #author, .site-main .content .comments .comment-form #email, .site-main .content .comments .comment-form #phone, .site-main .content .comments .comment-form textarea {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #dce3e8; }
+      .site-main .content .comments .comment-form label {
+        font-size: 14px;
+        font-family: "OpenSansBold", sans-serif;
+        color: #585858; }
+      .site-main .content .comments .comment-form .comment-form-author {
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+            -ms-flex-order: 1;
+                order: 1; }
+      .site-main .content .comments .comment-form .comment-form-email {
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+            -ms-flex-order: 2;
+                order: 2; }
+      .site-main .content .comments .comment-form .comment-form-url {
+        display: none; }
+      .site-main .content .comments .comment-form .comment-form-phone {
+        -webkit-box-ordinal-group: 4;
+        -webkit-order: 3;
+            -ms-flex-order: 3;
+                order: 3; }
+      .site-main .content .comments .comment-form .comment-form-comment {
+        -webkit-box-ordinal-group: 5;
+        -webkit-order: 4;
+            -ms-flex-order: 4;
+                order: 4; }
+      .site-main .content .comments .comment-form .form-submit {
+        -webkit-box-ordinal-group: 6;
+        -webkit-order: 5;
+            -ms-flex-order: 5;
+                order: 5; }
+        .site-main .content .comments .comment-form .form-submit .submit {
+          color: #ffaf36;
+          font-size: 13px;
+          font-family: "RalewayBold", sans-serif;
+          text-transform: uppercase;
+          border: 2px solid #ffaf36;
+          background-color: transparent;
+          padding: 12px 24px; }
+
 .site-footer {
   background-color: #1c1c1c;
   padding: 80px 0;
