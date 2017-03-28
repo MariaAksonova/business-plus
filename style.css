@@ -390,6 +390,63 @@
           color: #757575;
           text-transform: uppercase; }
 
+.about, .services, .news, .clients, .partners {
+  padding: 90px 0; }
+  .about .title h2, .services .title h2, .news .title h2, .clients .title h2, .partners .title h2 {
+    font-size: 30px;
+    font-family: "RalewayBold", sans-serif;
+    color: #1c1c1c;
+    text-transform: uppercase;
+    margin-top: 0; }
+  .about .title .title-line, .services .title .title-line, .news .title .title-line, .clients .title .title-line, .partners .title .title-line {
+    font-size: 16px;
+    font-family: "LoraItalic", sans-serif;
+    color: #1c1c1c; }
+
+.about .about-btn-area {
+  float: left;
+  margin-top: 20px; }
+
+.about .content p {
+  font-size: 14px;
+  font-family: "OpenSansRegular", sans-serif;
+  color: #585858; }
+
+.services {
+  background-color: #eaeff3;
+  position: relative; }
+  .services:before {
+    content: '';
+    background: url("./images/shape.png");
+    height: 101px;
+    width: 218px;
+    position: absolute;
+    bottom: 0;
+    right: 20%; }
+  .services ul {
+    list-style: none;
+    padding-left: 0; }
+    .services ul li {
+      padding-left: 80px;
+      margin-bottom: 64px; }
+      .services ul li h3 {
+        margin-top: 0;
+        font-size: 16px;
+        font-family: "RalewayBold", sans-serif;
+        color: #585858;
+        text-transform: uppercase; }
+      .services ul li p {
+        font-size: 14px;
+        font-family: "OpenSansRegular", sans-serif;
+        color: #585858; }
+  .services .title {
+    margin-bottom: 64px; }
+  .services .about-btn-area {
+    float: left; }
+
+.news {
+  background-color: #eaeff3; }
+
 .about-btn-area {
   border: 2px solid #ffaf36;
   height: 51px;

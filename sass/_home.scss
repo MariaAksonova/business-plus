@@ -1,0 +1,97 @@
+@import "variable";
+
+.about, .services, .news, .clients, .partners {
+  padding: 90px 0;
+
+  .title {
+    h2 {
+      font-size: 30px;
+      font-family: $font-ralbold;
+      color: $dark-grey-color;
+      text-transform: uppercase;
+      margin-top: 0;
+    }
+
+    .title-line {
+      font-size: 16px;
+      font-family: $font-italic;
+      color: $dark-grey-color;
+    }
+  }
+}
+
+.about {
+
+  .about-btn-area {
+    float: left;
+    margin-top: 20px;
+  }
+
+  .content {
+    p {
+      font-size: 14px;
+      font-family: $font-regular;
+      color: $grey-color;
+    }
+  }
+}
+
+.services {
+  background-color: $light-color;
+  position: relative;
+
+  &:before {
+    content: '';
+    background: url("./images/shape.png");
+    height: 101px;
+    width: 218px;
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      padding-left: 80px;
+      margin-bottom: 64px;
+
+      h3 {
+        margin-top: 0;
+        font-size: 16px;
+        font-family: $font-ralbold;
+        color: $grey-color;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 14px;
+        font-family: $font-regular;
+        color: $grey-color;
+      }
+    }
+  }
+
+  .title {
+    margin-bottom: 64px;
+  }
+
+  .about-btn-area {
+    float: left;
+  }
+}
+
+.clients {
+
+}
+
+.news {
+  background-color: $light-color;
+
+}
+
+.partners {
+
+}

@@ -149,3 +149,54 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+// Creates Movie Reviews Custom Post Type
+function about_post_type() {
+    $args = array(
+        'label' => 'About us',
+        'public' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'about-us'),
+        'query_var' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'trackbacks',
+            'custom-fields',
+            'comments',
+            'revisions',
+            'thumbnail',
+            'author',
+            'page-attributes',)
+    );
+    register_post_type( 'about-us', $args );
+}
+add_action( 'init', 'about_post_type' );
+
+function services_reviews_init() {
+    $args = array(
+        'label' => 'Services',
+        'public' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'services-reviews'),
+        'query_var' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'trackbacks',
+            'custom-fields',
+            'comments',
+            'revisions',
+            'thumbnail',
+            'author',
+            'page-attributes',)
+    );
+    register_post_type( 'services-reviews', $args );
+}
+add_action( 'init', 'services_reviews_init' );
