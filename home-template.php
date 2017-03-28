@@ -146,12 +146,18 @@ get_header(); ?>
 
 <section class="partners">
     <div class="container">
-        <div class="partners-slider">
-            <div class="title col-xs-12">
-                <h2>Partners</h2>
-                <p class="title-line">Our Great Partners</p>
-            </div>
-            <?php echo do_shortcode('[wonderplugin_carousel id="2"]'); ?>
+        <div class="title col-xs-12">
+            <h2>Partners</h2>
+            <p class="title-line">Our Great Partners</p>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="<?= get_template_directory_uri() ?>images/partner1.png"></div>
+            <div class="item"><img src="images/partner2.png"></div>
+            <div class="item"><img src="images/partner3.png"></div>
+            <div class="item"><img src="images/partner4.png"></div>
+            <div class="item"><img src="images/partner5.png"></div>
+            <div class="item"><img src="images/partner6.png"></div>
+
         </div>
     </div>
 </section>

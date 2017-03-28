@@ -112,10 +112,13 @@ add_action( 'widgets_init', 'business_plus_widgets_init' );
 function business_plus_scripts() {
 	wp_enqueue_style( 'business-plus-style', get_stylesheet_uri());
 	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/node_modules/bootstrap/dist/css/bootstrap.min.css');
+	wp_enqueue_style( 'carousel-style', get_template_directory_uri() . '/node_modules/owl.carousel/dist/assets/owl.carousel.min.css');
 
 	wp_enqueue_script( 'business-plus-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'business-plus-script', get_template_directory_uri() . '/js/main.js');
 	wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/node_modules/bootstrap/dist/js/bootstrap.min.js');
 	wp_enqueue_script( 'jquery-script', get_template_directory_uri() . '/node_modules/jquery/dist/jquery.min.js');
+	wp_enqueue_script( 'carousel-script', get_template_directory_uri() . '/node_modules/owl.carousel/dist/owl.carousel.min.js');
 
 	wp_enqueue_script( 'business-plus-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
