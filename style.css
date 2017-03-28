@@ -187,7 +187,43 @@
             justify-content: center;
     background-color: #eaeff3;
     padding: 90px 0; }
-    .site-main .content .comments .comment-reply-title {
+    .site-main .content .comments ol {
+      list-style: none; }
+    .site-main .content .comments .comment-list {
+      margin-bottom: 100px; }
+      .site-main .content .comments .comment-list .comment-meta {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .site-main .content .comments .comment-list .comment-meta .comment-metadata {
+          font-size: 13px;
+          font-family: "RalewayBold", sans-serif;
+          text-transform: uppercase; }
+          .site-main .content .comments .comment-list .comment-meta .comment-metadata a {
+            color: #ffaf36; }
+        .site-main .content .comments .comment-list .comment-meta .comment-author {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex; }
+          .site-main .content .comments .comment-list .comment-meta .comment-author .says {
+            display: none; }
+          .site-main .content .comments .comment-list .comment-meta .comment-author .fn {
+            margin-right: 10px;
+            font-size: 13px;
+            font-family: "OpenSansBold", sans-serif;
+            color: #1c1c1c;
+            text-transform: uppercase; }
+      .site-main .content .comments .comment-list .avatar {
+        -webkit-border-radius: 50%;
+                border-radius: 50%; }
+      .site-main .content .comments .comment-list .reply .comment-reply-link {
+        display: inline-block;
+        background: url("./images/reply.png");
+        height: 33px;
+        width: 33px; }
+    .site-main .content .comments .comment-reply-title, .site-main .content .comments .comments-title {
       font-size: 30px;
       font-family: "RalewayBold", sans-serif;
       color: #1c1c1c;

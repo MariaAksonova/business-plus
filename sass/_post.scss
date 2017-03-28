@@ -43,7 +43,59 @@
       background-color: #eaeff3;
       padding: 90px 0;
 
-      .comment-reply-title {
+      ol {
+        list-style: none;
+        //padding-left: 0;
+      }
+
+      .comment-list {
+        margin-bottom: 100px;
+
+        .comment-meta {
+          display: flex;
+
+          .comment-metadata {
+            font-size: 13px;
+            font-family: $font-ralbold;
+            text-transform: uppercase;
+
+            a {
+              color: $orange-color;
+            }
+          }
+
+          .comment-author {
+            display: flex;
+
+            .says {
+              display: none;
+            }
+
+            .fn {
+              margin-right: 10px;
+              font-size: 13px;
+              font-family: $font-bold;
+              color: $dark-grey-color;
+              text-transform: uppercase;
+            }
+          }
+        }
+
+        .avatar {
+          border-radius: 50%;
+        }
+
+        .reply {
+          .comment-reply-link {
+            display: inline-block;
+            background: url("./images/reply.png");
+            height: 33px;
+            width: 33px;
+          }
+        }
+      }
+
+      .comment-reply-title, .comments-title {
         font-size: 30px;
         font-family: $font-ralbold;
         color: $dark-grey-color;
