@@ -98,7 +98,7 @@ get_header(); ?>
         );
         $the_query = new WP_Query($args);
         if ($the_query->have_posts()):?>
-            <div class="clients-slider">
+            <div class="clients-slider col-xs-12">
                 <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                     <div class="slide">
                         <div class="content">
@@ -170,7 +170,7 @@ get_header(); ?>
             <h2>Partners</h2>
             <p class="title-line">Our Great Partners</p>
         </div>
-        <div class="partners-slider">
+        <div class="partners-slider col-xs-12">
             <div><img src="<?= get_template_directory_uri() ?>/images/partner1.png"></div>
             <div><img src="<?= get_template_directory_uri() ?>/images/partner2.png"></div>
             <div><img src="<?= get_template_directory_uri() ?>/images/partner3.png"></div>
