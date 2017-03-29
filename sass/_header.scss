@@ -23,7 +23,16 @@
   justify-content: space-between;
 
   h1 {
-    margin: 0;
+    margin: -16px 0 0 0;
+  }
+
+  .phone {
+    font-size: 14px;
+    font-family: $font-regular;
+    color: #fff;
+    background: url("./images/phone-icon.png") 0 no-repeat;
+    height: 23px;
+    padding-left: 23px;
   }
 }
 

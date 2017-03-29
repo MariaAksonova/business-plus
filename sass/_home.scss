@@ -135,6 +135,53 @@
 
 .news {
   background-color: $light-color;
+
+  .news-content {
+    margin-top: 40px;
+
+    .news-post {
+      padding: 0 20px;
+
+      .featured {
+        h3 {
+          margin-top: 0;
+        }
+
+        p {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .about-btn-area {
+      float: left;
+      margin-top: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      font-family: $font-regular;
+      color: $grey-color;
+      line-height: 28px;
+    }
+
+    h3 {
+      a {
+        font-size: 16px;
+        font-family: $font-ralbold;
+        color: $dark-grey-color;
+        text-transform: uppercase;
+      }
+    }
+
+    .date {
+      font-size: 13px;
+      font-family: $font-ralbold;
+      text-transform: uppercase;
+      color: $orange-color;
+      margin-bottom: 14px;
+    }
+  }
 }
 
 .partners {

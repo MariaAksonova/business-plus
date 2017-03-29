@@ -46,20 +46,6 @@ get_header(); ?>
 								</div>
 								<?php the_excerpt(); ?>
 								<div class="for-user row middle-xs">
-								    <div class="social row col-xs-6">
-										<span>Share: </span>
-										<div class="blog-social">
-										    <a class="facebook" href="<?php echo get_theme_mod('social_links_facebook'); ?>">
-												<span class="fa fa-facebook"></span>
-										    </a>
-										    <a class="twitter" href="<?php echo get_theme_mod('social_links_twitter'); ?>">
-												<span class="fa fa-twitter"></span>
-										    </a>
-										    <a class="google-plus" href="<?php echo get_theme_mod('social_links_google'); ?>">
-												<span class="fa fa-google-plus"></span>
-										    </a>
-										</div>
-								    </div>
 								    <div class="about-btn-area">
 									    <a href="<?php the_permalink(); ?>" class="button button-default" data-text="Read more"><span>read more</span></a>
 								    </div>

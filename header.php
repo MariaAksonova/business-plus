@@ -27,6 +27,7 @@
 				<h1>
 					<?php the_custom_logo(); ?>
 				</h1>
+				<span class="phone"><?php echo get_theme_mod('phone'); ?></span>
 				<?php wp_nav_menu(['theme_location' => 'main-nav', 'menu_class' => 'nav nav-pills']); ?>
 			</div>
 		</div>

@@ -46,7 +46,14 @@
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .header-container h1 {
-    margin: 0; }
+    margin: -16px 0 0 0; }
+  .header-container .phone {
+    font-size: 14px;
+    font-family: "OpenSansRegular", sans-serif;
+    color: #fff;
+    background: url("./images/phone-icon.png") 0 no-repeat;
+    height: 23px;
+    padding-left: 23px; }
 
 .custom-logo {
   width: 164px;
@@ -482,6 +489,33 @@
 
 .news {
   background-color: #eaeff3; }
+  .news .news-content {
+    margin-top: 40px; }
+    .news .news-content .news-post {
+      padding: 0 20px; }
+      .news .news-content .news-post .featured h3 {
+        margin-top: 0; }
+      .news .news-content .news-post .featured p {
+        margin-bottom: 15px; }
+    .news .news-content .about-btn-area {
+      float: left;
+      margin-top: 10px; }
+    .news .news-content p {
+      font-size: 14px;
+      font-family: "OpenSansRegular", sans-serif;
+      color: #585858;
+      line-height: 28px; }
+    .news .news-content h3 a {
+      font-size: 16px;
+      font-family: "RalewayBold", sans-serif;
+      color: #1c1c1c;
+      text-transform: uppercase; }
+    .news .news-content .date {
+      font-size: 13px;
+      font-family: "RalewayBold", sans-serif;
+      text-transform: uppercase;
+      color: #ffaf36;
+      margin-bottom: 14px; }
 
 .partners .partners-slider {
   margin: 40px 0 20px 0; }

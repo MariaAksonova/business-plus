@@ -102,41 +102,40 @@ get_header(); ?>
             <p class="title-line">From Our Blog</p>
         </div>
         <div class="news-content col-xs-12">
-        <?php
-        query_posts('id=5');
-        while ( have_posts() ) : the_post(); ?>
-                <div class="for-news col-xs-5">
-                    <div class="img-wrap">
-                        <?php the_post_thumbnail('full', 'class=img-responsive'); ?>
-                    </div>
-                    <h3 class="tittle">
-                        <?php the_title(); ?>
-                    </h3>
-                    <?php the_excerpt(); ?>
+            <div class="news-post col-xs-6">
+                <?php
+                $query = new WP_Query( array('post_type' => 'post', 'posts_per_page' => 1 ) );
+                while ( $query->have_posts() ) : $query->the_post(); ?>
+                <div class="img-wrap">
+                    <?php the_post_thumbnail('full', 'class=img-responsive'); ?>
                 </div>
-                <div class="heading col-xs-6">
-                    <?php
-                    $n=2;
-                    $recent = new WP_Query('showposts=$n');
-                    while($recent->have_posts()) : $recent->the_post();
-                        ?>
-                        <article class="featured">
-                            <h2>
-                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                            </h2>
-                            <div class="info">
-                                <div class="date start-xs">
-                                    <span><?php the_time( 'F-j-Y ' ); ?></span>
-                                </div>
+                <h3 class="title">
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                </h3>
+                <?php the_excerpt(); ?>
+                <?php endwhile; ?>
+            </div>
+            <div class="news-post col-xs-6">
+                <?php
+                $query = new WP_Query(array('post_type' => 'post', 'posts_per_page' => 2, 'offset' => 1 ));
+                while($query->have_posts()) : $query->the_post();
+                    ?>
+                    <article class="featured">
+                        <h3>
+                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        </h3>
+                        <div class="info">
+                            <div class="date start-xs">
+                                <span><?php the_time( 'F j, Y ' ); ?></span>
                             </div>
-                            <?php the_excerpt(); ?>
-                        </article>
-                    <?php endwhile; ?>
-                </div>
+                        </div>
+                        <?php the_excerpt(); ?>
+                    </article>
+                <?php endwhile; ?>
                 <div class="about-btn-area start-xs">
                     <a href="<?php the_permalink(); ?>" class="button button-default" data-text="View more"><span>View more</span></a>
                 </div>
-        <?php endwhile; ?>
+            </div>
         </div>
     </div>
 </section>
