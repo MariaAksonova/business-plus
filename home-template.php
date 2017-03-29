@@ -3,27 +3,6 @@
 Template Name: Home
 */
 get_header(); ?>
-<!--<section class="slider">-->
-<!--    <div class="container">-->
-<!--        --><?php
-//        $args = array(
-//            'post_type' => 'slides'
-//        );
-//        $the_query = new WP_Query($args);
-//        if ( have_posts() ):?>
-<!--            <div class="owl-carousel owl-theme owl-loaded owl-drag">-->
-<!--                --><?php //while ( have_posts() ) : the_post(); ?>
-<!--                    <div class="item">-->
-<!--                        <h4> --><?php //the_title(); ?><!--</h4>-->
-<!--                        <div class="content">-->
-<!--                            --><?php //the_content(); ?>
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                --><?php //endwhile; ?>
-<!--            </div>-->
-<!--        --><?php //endif; wp_reset_postdata(); ?>
-<!--    </div>-->
-<!--</section>-->
 
 <section class="about">
     <div class="container">
@@ -122,18 +101,18 @@ get_header(); ?>
             <h2>News</h2>
             <p class="title-line">From Our Blog</p>
         </div>
+        <div class="news-content col-xs-12">
         <?php
-        query_posts('p=88');
+        query_posts('id=5');
         while ( have_posts() ) : the_post(); ?>
-            <div class="news-content col-xs-12">
-                <div class="for-news col-xs-6">
+                <div class="for-news col-xs-5">
                     <div class="img-wrap">
                         <?php the_post_thumbnail('full', 'class=img-responsive'); ?>
                     </div>
                     <h3 class="tittle">
                         <?php the_title(); ?>
                     </h3>
-                    <?php the_content(); ?>
+                    <?php the_excerpt(); ?>
                 </div>
                 <div class="heading col-xs-6">
                     <?php
@@ -147,7 +126,7 @@ get_header(); ?>
                             </h2>
                             <div class="info">
                                 <div class="date start-xs">
-                                    <span><?php the_time( 'F j, Y ' ); ?></span>
+                                    <span><?php the_time( 'F-j-Y ' ); ?></span>
                                 </div>
                             </div>
                             <?php the_excerpt(); ?>
@@ -157,8 +136,8 @@ get_header(); ?>
                 <div class="about-btn-area start-xs">
                     <a href="<?php the_permalink(); ?>" class="button button-default" data-text="View more"><span>View more</span></a>
                 </div>
-            </div>
         <?php endwhile; ?>
+        </div>
     </div>
 </section>
 
