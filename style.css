@@ -447,6 +447,33 @@
 .news {
   background-color: #eaeff3; }
 
+.partners .partners-slider {
+  margin: 40px 0 20px 0; }
+
+.slick-list {
+  margin-bottom: 40px; }
+
+.slick-dots {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .slick-dots li {
+    margin-right: 6px; }
+  .slick-dots button {
+    background-color: #36a8ff;
+    height: 10px;
+    width: 10px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    text-indent: -999px;
+    margin: 0;
+    padding: 0;
+    border: none; }
+  .slick-dots .slick-active button {
+    background-color: #ffaf36; }
+
 .about-btn-area {
   border: 2px solid #ffaf36;
   height: 51px;

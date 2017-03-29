@@ -92,9 +92,29 @@ get_header(); ?>
             <h2>Clients</h2>
             <p class="title-line">Whats our client says</p>
         </div>
-        <div class="slider">
-            <?php echo do_shortcode('[wonderplugin_carousel id="1"]'); ?>
-        </div>
+        <?php
+        $args = array(
+            'post_type' => 'slides'
+        );
+        $the_query = new WP_Query($args);
+        if ($the_query->have_posts()):?>
+            <div class="clients-slider">
+                <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                    <div class="slide">
+                        <div class="content">
+                            <?php the_content(); ?>
+                        </div>
+                        <div class="client">
+                            <?php the_post_thumbnail('full', 'class=img-responsive'); ?>
+                            <div class="client-name">
+                                <h4> <?php the_title(); ?></h4>
+                                <p>Designation</p>
+                            </div>
+                        </div>
+                    </div>
+                <?php endwhile; ?>
+            </div>
+        <?php endif; wp_reset_postdata(); ?>
     </div>
 </section>
 
@@ -150,14 +170,14 @@ get_header(); ?>
             <h2>Partners</h2>
             <p class="title-line">Our Great Partners</p>
         </div>
-        <div class="owl-carousel owl-theme">
-            <div class="item"><img src="<?= get_template_directory_uri() ?>images/partner1.png"></div>
-            <div class="item"><img src="images/partner2.png"></div>
-            <div class="item"><img src="images/partner3.png"></div>
-            <div class="item"><img src="images/partner4.png"></div>
-            <div class="item"><img src="images/partner5.png"></div>
-            <div class="item"><img src="images/partner6.png"></div>
-
+        <div class="partners-slider">
+            <div><img src="<?= get_template_directory_uri() ?>/images/partner1.png"></div>
+            <div><img src="<?= get_template_directory_uri() ?>/images/partner2.png"></div>
+            <div><img src="<?= get_template_directory_uri() ?>/images/partner3.png"></div>
+            <div><img src="<?= get_template_directory_uri() ?>/images/partner4.png"></div>
+            <div><img src="<?= get_template_directory_uri() ?>/images/partner5.png"></div>
+            <div><img src="<?= get_template_directory_uri() ?>/images/partner6.png"></div>
+            <div><img src="<?= get_template_directory_uri() ?>/images/partner4.png"></div>
         </div>
     </div>
 </section>

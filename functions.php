@@ -112,13 +112,14 @@ add_action( 'widgets_init', 'business_plus_widgets_init' );
 function business_plus_scripts() {
 	wp_enqueue_style( 'business-plus-style', get_stylesheet_uri());
 	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/node_modules/bootstrap/dist/css/bootstrap.min.css');
-	wp_enqueue_style( 'carousel-style', get_template_directory_uri() . '/node_modules/owl.carousel/dist/assets/owl.carousel.min.css');
+	wp_enqueue_style( 'carousel-style', get_template_directory_uri() . '/node_modules/slick-carousel/slick/slick.css');
+	wp_enqueue_style( 'carousel-style', get_template_directory_uri() . '/node_modules/slick-carousel/slick/slick-theme.css');
 
 	wp_enqueue_script( 'business-plus-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-	wp_enqueue_script( 'business-plus-script', get_template_directory_uri() . '/js/main.js');
-	wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/node_modules/bootstrap/dist/js/bootstrap.min.js');
-	wp_enqueue_script( 'jquery-script', get_template_directory_uri() . '/node_modules/jquery/dist/jquery.min.js');
-	wp_enqueue_script( 'carousel-script', get_template_directory_uri() . '/node_modules/owl.carousel/dist/owl.carousel.min.js');
+    wp_enqueue_script( 'jquery-script', get_template_directory_uri() . '/node_modules/jquery/dist/jquery.min.js');
+    wp_enqueue_script( 'business-plus-script', get_template_directory_uri() . '/js/index.js');
+    wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/node_modules/bootstrap/dist/js/bootstrap.min.js');
+	wp_enqueue_script( 'carousel-script', get_template_directory_uri() . '/node_modules/slick-carousel/slick/slick.min.js');
 
 	wp_enqueue_script( 'business-plus-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
@@ -203,3 +204,28 @@ function services_reviews_init() {
     register_post_type( 'services-reviews', $args );
 }
 add_action( 'init', 'services_reviews_init' );
+
+function slider_post_type() {
+    $args = array(
+        'label' => 'Clients slider',
+        'public' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'slides'),
+        'query_var' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'trackbacks',
+            'custom-fields',
+            'comments',
+            'revisions',
+            'thumbnail',
+            'author',
+            'page-attributes',)
+    );
+    register_post_type( 'slides', $args );
+}
+add_action( 'init', 'slider_post_type' );
