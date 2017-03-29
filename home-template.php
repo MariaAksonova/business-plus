@@ -93,14 +93,12 @@ get_header(); ?>
             <p class="title-line">Whats our client says</p>
         </div>
         <?php
-        $args = array(
-            'post_type' => 'slides'
-        );
+        $args = array('post_type' => 'slides', 'posts_per_page' => 100);
         $the_query = new WP_Query($args);
         if ($the_query->have_posts()):?>
             <div class="clients-slider col-xs-12">
                 <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                    <div class="slide">
+                    <div class="col-xs-4">
                         <div class="content">
                             <?php the_content(); ?>
                         </div>

@@ -410,7 +410,8 @@
 .about .content p {
   font-size: 14px;
   font-family: "OpenSansRegular", sans-serif;
-  color: #585858; }
+  color: #585858;
+  line-height: 28px; }
 
 .services {
   background-color: #eaeff3;
@@ -438,39 +439,73 @@
       .services ul li p {
         font-size: 14px;
         font-family: "OpenSansRegular", sans-serif;
-        color: #585858; }
+        color: #585858;
+        line-height: 28px; }
   .services .title {
     margin-bottom: 64px; }
   .services .about-btn-area {
     float: left; }
+
+.clients .clients-slider {
+  margin-top: 40px; }
+  .clients .clients-slider .slick-list {
+    margin-bottom: 40px; }
+  .clients .clients-slider .slick-slide {
+    padding: 0 30px; }
+    .clients .clients-slider .slick-slide .content p {
+      font-size: 14px;
+      font-family: "OpenSansRegular", sans-serif;
+      color: #585858;
+      line-height: 28px;
+      background: url("./images/quote-icon.png") no-repeat; }
+    .clients .clients-slider .slick-slide .client {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 20px; }
+      .clients .clients-slider .slick-slide .client .client-name {
+        margin-left: 10px; }
+        .clients .clients-slider .slick-slide .client .client-name h4 {
+          font-size: 14px;
+          font-family: "RalewayBold", sans-serif;
+          color: #1c1c1c;
+          margin-bottom: 2px; }
+        .clients .clients-slider .slick-slide .client .client-name p {
+          font-size: 14px;
+          font-family: "OpenSansRegular", sans-serif;
+          color: #585858; }
 
 .news {
   background-color: #eaeff3; }
 
 .partners .partners-slider {
   margin: 40px 0 20px 0; }
-  .partners .partners-slider .slick-list {
-    margin-bottom: 40px; }
-  .partners .partners-slider .slick-dots {
-    list-style: none;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-    .partners .partners-slider .slick-dots li {
-      margin-right: 6px; }
-    .partners .partners-slider .slick-dots button {
-      background-color: #36a8ff;
-      height: 10px;
-      width: 10px;
-      -webkit-border-radius: 50%;
-              border-radius: 50%;
-      text-indent: -999px;
-      margin: 0;
-      padding: 0;
-      border: none; }
-    .partners .partners-slider .slick-dots .slick-active button {
-      background-color: #ffaf36; }
+
+.slick-dots {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .slick-dots li {
+    margin-right: 6px; }
+  .slick-dots button {
+    background-color: #36a8ff;
+    height: 10px;
+    width: 10px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    text-indent: -999px;
+    margin: 0;
+    padding: 0;
+    border: none; }
+  .slick-dots .slick-active button {
+    background-color: #ffaf36; }
 
 .about-btn-area {
   border: 2px solid #ffaf36;
